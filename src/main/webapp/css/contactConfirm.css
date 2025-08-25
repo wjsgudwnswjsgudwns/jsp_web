@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+/* contactConfirm.css */
+
+/* 전체 컨테이너 */
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333;
+}
+
+/* 제목 */
+.contact-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+/* 안내 문구 */
+.contact-container p {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* 예약 정보 박스 */
+.contact-confirm {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px 30px;
+    background-color: #f9f9f9;
+}
+
+.contact-confirm p {
+    margin: 12px 0;
+    font-size: 1rem;
+}
+
+.contact-confirm strong {
+    display: inline-block;
+    width: 100px;
+    color: #2c3e50;
+}
+
+/* 예약 내용 박스 */
+.contact-content-box {
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    white-space: pre-wrap; /* 줄바꿈 유지 */
+}
+
+/* 버튼 컨테이너 */
+.contact-actions {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact-actions a {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: 0.3s all;
+    color: #fff;
+}
+
+/* 홈으로 버튼 */
+.btn-submit {
+    background-color: #3498db;
+}
+
+.btn-submit:hover {
+    background-color: #2980b9;
+}
+
+/* 새 예약하기 버튼 */
+.btn-cancel {
+    background-color: #e74c3c;
+}
+
+.btn-cancel:hover {
+    background-color: #c0392b;
+}
+
+/* 반응형 */
+@media screen and (max-width: 600px) {
+    .contact-container {
+        padding: 20px;
+    }
+
+    .contact-confirm strong {
+        width: 90px;
+    }
+
+    .contact-actions a {
+        margin: 10px 0;
+        width: 80%;
+    }
+}

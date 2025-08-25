@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/* 기본 리셋 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: #fff;
+    color: #111;
+    text-align: center;
+}
+
+/* 메인 컨테이너 */
+.main-content {
+    padding: 80px 20px;
+}
+
+/* 회원 정보 수정 박스 */
+.modify-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fafafa;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.modify-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* 입력 폼 */
+.modify-form .form-group {
+    margin-bottom: 20px;
+}
+
+.modify-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.modify-form input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.modify-form input:focus {
+    border: 1px solid #111;
+}
+
+/* 읽기 전용 필드 스타일 */
+.modify-form input[readonly] {
+    background-color: #eee;
+    cursor: not-allowed;
+    color: #888;
+}
+
+/* 버튼 컨테이너 */
+.btn-box {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* 버튼 */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #111;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+    margin: 0 5px;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+.btn.cancel {
+    background: #ccc;
+    color: #111;
+}
+
+.btn.cancel:hover {
+    background: #aaa;
+}
+
+/* 에러 메시지 */
+.error-message {
+    color: #d9534f;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}

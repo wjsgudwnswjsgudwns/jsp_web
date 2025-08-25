@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+/* 기본 리셋 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans KR", "Helvetica Neue", Arial, sans-serif;
+    background: #fff;
+    color: #111;
+    text-align: center;
+}
+
+/* 메인 콘텐츠 */
+.main-content {
+    padding: 60px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main-content h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #111;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* 게시판 테이블 */
+.music-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.music-table th,
+.music-table td {
+    border: 1px solid #ddd;
+    padding: 12px 10px;
+    font-size: 0.95rem;
+}
+
+.music-table th {
+    background: #f7f7f7;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.music-table td a {
+    text-decoration: none;
+    color: #111;
+    transition: opacity 0.3s;
+}
+
+.music-table td a:hover {
+    opacity: 0.6;
+}
+
+/* 버튼 */
+.btn-box {
+    text-align: right;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+/* 페이지네이션 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin: 30px 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 14px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.pagination a:hover {
+    background: #f5f5f5;
+    border-color: #aaa;
+    transform: translateY(-2px);
+}
+
+.pagination a.current {
+    background: #333;
+    color: #fff;
+    font-weight: bold;
+    border-color: #333;
+    cursor: default;
+    pointer-events: none; /* 현재 페이지는 클릭 안 되게 */
+}
+
+.pagination a.prev,
+.pagination a.next {
+    font-weight: bold;
+    background: #fafafa;
+}
+
+.pagination a.prev:hover,
+.pagination a.next:hover {
+    background: #eaeaea;
+}

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* 기본 리셋 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: #fff;
+    color: #111;
+}
+
+/* Footer 영역 */
+.site-footer {
+    border-top: 1px solid #ddd;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* 로고 */
+.footer-logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #111;
+    letter-spacing: 2px;
+    transition: opacity 0.3s;
+}
+
+.footer-logo a:hover {
+    opacity: 0.6;
+}
+
+/* 메뉴 */
+.footer-menu {
+    margin: 20px 0;
+}
+
+.footer-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #111;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    transition: opacity 0.3s;
+}
+
+.footer-menu a:hover {
+    opacity: 0.6;
+}
+
+/* 카피라이트 */
+.footer-copy {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #666;
+}

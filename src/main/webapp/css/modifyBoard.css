@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+.modify-board-container {
+    width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.modify-board-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.modify-board-form .form-group {
+    margin-bottom: 15px;
+}
+
+.modify-board-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.modify-board-form input[type="text"],
+.modify-board-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.modify-board-form textarea {
+    resize: none;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn.cancel {
+    background-color: #ccc;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    line-height: 36px;
+}
+
+.btn:not(.cancel) {
+    background-color: #4CAF50;
+    color: white;
+}
